@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phi's Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+      color: white;
+      top: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #00b8d4;
+    }
+
+    /*  Container */
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Landing Page */
+    .landing {
+      text-align: center;
+      background-color: #ffffff;
+      padding-top: 80px;
+    }
+
+    .landing img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .landing h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .landing p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    /* About */
+    .about h2 {
+      margin-bottom: 1rem;
+    }
+
+    /* Education */
+    .education-list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .education-item {
+      text-align: center;
+      width: 30%;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-item img {
+      max-width: 80px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Skills */
+    .technical-skills, .soft-skills {
+      padding: 2rem;
+      background-color: #f0f8ff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .star-icon {
+      font-size: 1.5rem;
+      color: gold;
+      margin-right: 0.5rem;
+    }
+
+    /* Contact */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+    }
+
+    .contact-details, .contact-form {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .contact-details h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    .contact-form button {
+      background-color: #00b8d4;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #007c91;
+    }
+
+    /* Spacing and Headers */
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#landing">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Landing Page -->
+  <section id="landing" class="landing">
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462558003_1589548345331902_1893818539405648447_n.jpg?stp=dst-jpg_p480x480&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFQlWky2fm5XwwzDrEeM9KrqgKPSIcYRpSqAo9IhxhGlDfZGEmyoeZ2n5RF7Fl41zdaFQpVLlaCURPJZBL09_ds&_nc_ohc=jCc6Yjh1KswQ7kNvgHzLnaj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&_nc_gid=A0K4TB0DdNdRVlROZjLfFut&oh=03_Q7cD1QFWV3zN1N4C3D_3HvIxijr-c457ajgoIaxfEFRf6y5vlA&oe=6746C0D7" alt="Profile Picture">
+    <h1>Welcome to Phi's Portfolio</h1>
+    <p>😊 Glad you like the design! Don't forget to give me full marks! 😊</p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p><strong>Name:</strong> Phirada Lekpaeng</p>
+    <p><strong>Nickname:</strong> Phi</p>
+    <p><strong>Age:</strong> 18</p>
+    <p><strong>Hobbies:</strong> Reading novels, listening to music</p>
+    <p><strong>Motto:</strong> "Destiny is determined by our actions; we are the architects of our own fate."</p>
+    <p><strong>Biggest Dream:</strong> To be a wealthy, contented person</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="education-list">
+      <div class="education-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Y0zXXCY9B0oTCJZlQfOpE9D1vva9Ap2EfD_qrkbdycybVpxo0VfkJ_NSNwUfXlDpa3k&usqp=CAU" alt="Kritsana Taweewit Logo">
+        <p>Primary Education - Kritsana Taweewit School</p>
+      </div>
+      <div class="education-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8EfJ0BVqiidttBLbuRmH7OrT4hdqmcBxoA&s" alt="Thoengwittayakhom Logo">
+        <p>Lower Secondary - Thoeng wittayakhom School</p>
+      </div>
+      <div class="education-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/PCSHS_Chiang_Rai_%28th%29.svg/200px-PCSHS_Chiang_Rai_%28th%29.svg.png" alt="Princess Chulabhorn Logo">
+        <p>Upper Secondary - Princess Chulabhorn Science High School Chiang Rai</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+   <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="technical-skills">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li><span class="star-icon">★</span> Photoshop</li>
+        <li><span class="star-icon">★</span> HTML/CSS</li>
+        <li><span class="star-icon">★</span> Python</li>
+      </ul>
+    </div>
+    <div class="soft-skills">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li><span class="star-icon">★</span> Communication</li>
+        <li><span class="star-icon">★</span> Collaboration</li>
+        <li><span class="star-icon">★</span> Growth mindset</li>
+        <li><span class="star-icon">★</span> Emotional intelligence</li>
+        <li><span class="star-icon">★</span> Adaptability</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <div class="contact-details">
+        <h2>Let's Connect</h2>
+        <p><span>If you want mail:</span> phirada.lekp@mail.kmutt.ac.th</p>
+        <p><span>If you want to hear my voice:</span> 0918535170</p>
+        <p><span>If you want to be influenced:</span> @pholy_phorida</p>
+        <p><span>If you want to see me irl:</span> I'll be at heaven</p>
+      </div>
+      <div class="contact-form">
+        <form action="mailto:phirada.lekp@mail.kmutt.ac.th" method="post" enctype="text/plain">
+          <input type="text" name="first_name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="4" placeholder="Type your message here..." required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    document.querySelectorAll('.navbar a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
